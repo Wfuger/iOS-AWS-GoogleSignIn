@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E93E1CFE5FE943BFBF4EED8 /* Pods_InstagramAWSPods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5D111CB5844E0B31C2C13F /* Pods_InstagramAWSPods.framework */; };
+		764D443C1D9D9C2400E14968 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764D443B1D9D9C2400E14968 /* User.swift */; };
 		76F3823E1D9C6EC6004CB681 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F3823D1D9C6EC6004CB681 /* AppDelegate.swift */; };
 		76F382401D9C6EC6004CB681 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F3823F1D9C6EC6004CB681 /* ViewController.swift */; };
 		76F382431D9C6EC6004CB681 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76F382411D9C6EC6004CB681 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		3E5D111CB5844E0B31C2C13F /* Pods_InstagramAWSPods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramAWSPods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		764D443B1D9D9C2400E14968 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		76F3823A1D9C6EC6004CB681 /* InstagramAWSPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramAWSPods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F3823D1D9C6EC6004CB681 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76F3823F1D9C6EC6004CB681 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				76F382441D9C6EC6004CB681 /* Assets.xcassets */,
 				76F382461D9C6EC6004CB681 /* LaunchScreen.storyboard */,
 				76F382491D9C6EC6004CB681 /* Info.plist */,
+				764D443B1D9D9C2400E14968 /* User.swift */,
 			);
 			path = InstagramAWSPods;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			files = (
 				76F382401D9C6EC6004CB681 /* ViewController.swift in Sources */,
 				76F3823E1D9C6EC6004CB681 /* AppDelegate.swift in Sources */,
+				764D443C1D9D9C2400E14968 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,7 +513,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.-BoogieSquad.InstagramAWSPods";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -525,7 +529,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.-BoogieSquad.InstagramAWSPods";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
