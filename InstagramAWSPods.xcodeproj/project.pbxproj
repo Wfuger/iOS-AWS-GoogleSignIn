@@ -14,7 +14,7 @@
 		764D44421DA2E6D600E14968 /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764D44411DA2E6D600E14968 /* UserVC.swift */; };
 		764D44481DA2FA0E00E14968 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764D44471DA2FA0E00E14968 /* Post.swift */; };
 		764D444A1DA2FFBF00E14968 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764D44491DA2FFBF00E14968 /* PostVC.swift */; };
-		764D444C1DA300B500E14968 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764D444B1DA300B500E14968 /* Constants.swift */; };
+		764D444E1DA3019C00E14968 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764D444D1DA3019C00E14968 /* Constants.swift */; };
 		76F3823E1D9C6EC6004CB681 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F3823D1D9C6EC6004CB681 /* AppDelegate.swift */; };
 		76F382401D9C6EC6004CB681 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F3823F1D9C6EC6004CB681 /* ViewController.swift */; };
 		76F382431D9C6EC6004CB681 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76F382411D9C6EC6004CB681 /* Main.storyboard */; };
@@ -50,7 +50,7 @@
 		764D44411DA2E6D600E14968 /* UserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
 		764D44471DA2FA0E00E14968 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		764D44491DA2FFBF00E14968 /* PostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
-		764D444B1DA300B500E14968 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		764D444D1DA3019C00E14968 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		76F3823A1D9C6EC6004CB681 /* InstagramAWSPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramAWSPods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F3823D1D9C6EC6004CB681 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76F3823F1D9C6EC6004CB681 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 				764D443D1DA2D9A600E14968 /* Follower.swift */,
 				764D443F1DA2DBDA00E14968 /* DatabaseService.swift */,
 				764D44471DA2FA0E00E14968 /* Post.swift */,
-				764D444B1DA300B500E14968 /* Constants.swift */,
+				764D444D1DA3019C00E14968 /* Constants.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -409,7 +409,7 @@
 				764D44481DA2FA0E00E14968 /* Post.swift in Sources */,
 				764D444A1DA2FFBF00E14968 /* PostVC.swift in Sources */,
 				764D443E1DA2D9A600E14968 /* Follower.swift in Sources */,
-				764D444C1DA300B500E14968 /* Constants.swift in Sources */,
+				764D444E1DA3019C00E14968 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
