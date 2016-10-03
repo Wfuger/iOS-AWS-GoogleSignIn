@@ -78,7 +78,9 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate, 
                 if task.error != nil {
                     print(task.error)
                 } else {
-                    print(task.result)
+                    dispatch_async(dispatch_get_main_queue(), { 
+                        self.performSegueWithIdentifier("login", sender: self)
+                    })
                 }
                 return nil
             })

@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		0E93E1CFE5FE943BFBF4EED8 /* Pods_InstagramAWSPods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5D111CB5844E0B31C2C13F /* Pods_InstagramAWSPods.framework */; };
 		764D443C1D9D9C2400E14968 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764D443B1D9D9C2400E14968 /* User.swift */; };
+		764D443E1DA2D9A600E14968 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764D443D1DA2D9A600E14968 /* Follower.swift */; };
+		764D44401DA2DBDA00E14968 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764D443F1DA2DBDA00E14968 /* DatabaseService.swift */; };
+		764D44421DA2E6D600E14968 /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764D44411DA2E6D600E14968 /* UserVC.swift */; };
+		764D44481DA2FA0E00E14968 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764D44471DA2FA0E00E14968 /* Post.swift */; };
+		764D444A1DA2FFBF00E14968 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764D44491DA2FFBF00E14968 /* PostVC.swift */; };
+		764D444C1DA300B500E14968 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764D444B1DA300B500E14968 /* Constants.swift */; };
 		76F3823E1D9C6EC6004CB681 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F3823D1D9C6EC6004CB681 /* AppDelegate.swift */; };
 		76F382401D9C6EC6004CB681 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F3823F1D9C6EC6004CB681 /* ViewController.swift */; };
 		76F382431D9C6EC6004CB681 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76F382411D9C6EC6004CB681 /* Main.storyboard */; };
@@ -39,6 +45,12 @@
 /* Begin PBXFileReference section */
 		3E5D111CB5844E0B31C2C13F /* Pods_InstagramAWSPods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramAWSPods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		764D443B1D9D9C2400E14968 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		764D443D1DA2D9A600E14968 /* Follower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		764D443F1DA2DBDA00E14968 /* DatabaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		764D44411DA2E6D600E14968 /* UserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
+		764D44471DA2FA0E00E14968 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		764D44491DA2FFBF00E14968 /* PostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		764D444B1DA300B500E14968 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		76F3823A1D9C6EC6004CB681 /* InstagramAWSPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramAWSPods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F3823D1D9C6EC6004CB681 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76F3823F1D9C6EC6004CB681 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +105,49 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		764D44431DA2F99F00E14968 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				764D443B1D9D9C2400E14968 /* User.swift */,
+				764D443D1DA2D9A600E14968 /* Follower.swift */,
+				764D443F1DA2DBDA00E14968 /* DatabaseService.swift */,
+				764D44471DA2FA0E00E14968 /* Post.swift */,
+				764D444B1DA300B500E14968 /* Constants.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		764D44441DA2F9AE00E14968 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				76F382411D9C6EC6004CB681 /* Main.storyboard */,
+				76F382461D9C6EC6004CB681 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		764D44451DA2F9C000E14968 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				76F3823F1D9C6EC6004CB681 /* ViewController.swift */,
+				764D44411DA2E6D600E14968 /* UserVC.swift */,
+				764D44491DA2FFBF00E14968 /* PostVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		764D44461DA2F9CB00E14968 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				76F3826B1D9C7069004CB681 /* GoogleService-Info.plist */,
+				76F3827A1D9C7ED7004CB681 /* InstagramAWSPods.entitlements */,
+				76F3823D1D9C6EC6004CB681 /* AppDelegate.swift */,
+				76F382441D9C6EC6004CB681 /* Assets.xcassets */,
+				76F382491D9C6EC6004CB681 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		76F382311D9C6EC6004CB681 = {
 			isa = PBXGroup;
 			children = (
@@ -118,15 +173,10 @@
 		76F3823C1D9C6EC6004CB681 /* InstagramAWSPods */ = {
 			isa = PBXGroup;
 			children = (
-				76F3827A1D9C7ED7004CB681 /* InstagramAWSPods.entitlements */,
-				76F3826B1D9C7069004CB681 /* GoogleService-Info.plist */,
-				76F3823D1D9C6EC6004CB681 /* AppDelegate.swift */,
-				76F3823F1D9C6EC6004CB681 /* ViewController.swift */,
-				76F382411D9C6EC6004CB681 /* Main.storyboard */,
-				76F382441D9C6EC6004CB681 /* Assets.xcassets */,
-				76F382461D9C6EC6004CB681 /* LaunchScreen.storyboard */,
-				76F382491D9C6EC6004CB681 /* Info.plist */,
-				764D443B1D9D9C2400E14968 /* User.swift */,
+				764D44461DA2F9CB00E14968 /* SupportingFiles */,
+				764D44431DA2F99F00E14968 /* Model */,
+				764D44451DA2F9C000E14968 /* Controller */,
+				764D44441DA2F9AE00E14968 /* View */,
 			);
 			path = InstagramAWSPods;
 			sourceTree = "<group>";
@@ -352,8 +402,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				76F382401D9C6EC6004CB681 /* ViewController.swift in Sources */,
+				764D44421DA2E6D600E14968 /* UserVC.swift in Sources */,
+				764D44401DA2DBDA00E14968 /* DatabaseService.swift in Sources */,
 				76F3823E1D9C6EC6004CB681 /* AppDelegate.swift in Sources */,
 				764D443C1D9D9C2400E14968 /* User.swift in Sources */,
+				764D44481DA2FA0E00E14968 /* Post.swift in Sources */,
+				764D444A1DA2FFBF00E14968 /* PostVC.swift in Sources */,
+				764D443E1DA2D9A600E14968 /* Follower.swift in Sources */,
+				764D444C1DA300B500E14968 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

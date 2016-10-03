@@ -1,8 +1,8 @@
 //
-//  User.swift
+//  Follower.swift
 //  InstagramAWSPods
 //
-//  Created by Will Fuger on 9/29/16.
+//  Created by Will Fuger on 10/3/16.
 //  Copyright © 2016 BoogieSquad. All rights reserved.
 //
 
@@ -10,11 +10,11 @@ import Foundation
 import AWSCore
 import AWSDynamoDB
 
-class User: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
+class Follower: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     
     var id = ""
-    var name = ""
-    var email = ""
+    var follower = ""
+    var following = ""
     
     override init!() {
         super.init()
@@ -22,9 +22,16 @@ class User: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     
     override init(dictionary dictionaryValue: [NSObject : AnyObject]!, error: ()) throws {
         super.init()
-        id = dictionaryValue["id"] as! String
-        name = dictionaryValue["name"] as! String
-        email = dictionaryValue["email"] as! String
+        
+        if dictionaryValue["id"] != nil {
+            id = dictionaryValue["id"] as! String
+        }
+        if dictionaryValue["follower"] != nil {
+            follower = dictionaryValue["follower"] as! String
+        }
+        if dictionaryValue["following"] != nil {
+            following = dictionaryValue["following"] as! String
+        }
     }
     
     required init!(coder: NSCoder!) {
@@ -32,10 +39,11 @@ class User: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     }
     
     class func dynamoDBTableName() -> String {
-        return "Users"
+        return "Followers"
     }
     
     class func hashKeyAttribute() -> String {
         return "id"
     }
 }
+
