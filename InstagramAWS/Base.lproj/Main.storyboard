@@ -59,6 +59,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="User List" id="SC5-Fw-7ou">
+                        <barButtonItem key="leftBarButtonItem" title="Feed" id="32r-jF-oN9">
+                            <connections>
+                                <segue destination="EVb-Fy-6ii" kind="show" id="VEW-7L-MCW"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Post" id="FBX-RE-4cl">
                             <connections>
                                 <segue destination="m4R-A8-Ho5" kind="show" id="Nu5-KD-sIo"/>
@@ -134,6 +139,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ByY-TW-1hZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2389.5999999999999" y="138.98050974512745"/>
+        </scene>
+        <!--FeedTVC-->
+        <scene sceneID="Rlf-aU-QQg">
+            <objects>
+                <tableViewController id="EVb-Fy-6ii" customClass="FeedTVC" customModule="InstagramAWS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="220" sectionHeaderHeight="28" sectionFooterHeight="28" id="Aaq-1v-275">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="220" id="Evi-KO-oga" customClass="FeedTableViewCell" customModule="InstagramAWS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="220"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Evi-KO-oga" id="YiF-ua-Mgp">
+                                    <frame key="frameInset" width="375" height="219"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DeB-wM-lV8"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Euc-FI-Bpj">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="37" id="3Dw-wV-LoN"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="DeB-wM-lV8" firstAttribute="top" secondItem="YiF-ua-Mgp" secondAttribute="topMargin" id="10d-wR-Sh0"/>
+                                        <constraint firstItem="Euc-FI-Bpj" firstAttribute="top" secondItem="DeB-wM-lV8" secondAttribute="bottom" constant="14" id="7cf-et-76k"/>
+                                        <constraint firstItem="DeB-wM-lV8" firstAttribute="centerX" secondItem="YiF-ua-Mgp" secondAttribute="centerX" id="EbM-c4-NdN"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Euc-FI-Bpj" secondAttribute="bottom" constant="5" id="V6Y-c2-XqG"/>
+                                        <constraint firstItem="DeB-wM-lV8" firstAttribute="leading" secondItem="Euc-FI-Bpj" secondAttribute="leading" id="efo-Dt-q8Y"/>
+                                        <constraint firstItem="DeB-wM-lV8" firstAttribute="leading" secondItem="YiF-ua-Mgp" secondAttribute="leadingMargin" constant="57" id="his-Rw-iHZ"/>
+                                        <constraint firstItem="DeB-wM-lV8" firstAttribute="trailing" secondItem="Euc-FI-Bpj" secondAttribute="trailing" id="yTu-fg-JAD"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="message" destination="Euc-FI-Bpj" id="wkK-vc-idz"/>
+                                    <outlet property="postedimage" destination="DeB-wM-lV8" id="e9n-Hb-CRh"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="EVb-Fy-6ii" id="pjA-my-KyU"/>
+                            <outlet property="delegate" destination="EVb-Fy-6ii" id="u5m-qk-xxT"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="inN-Vf-71M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1677.5999999999999" y="-600.44977511244383"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OuE-uT-m3t">

@@ -70,7 +70,7 @@ class PostVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
                 UIApplication.sharedApplication().endIgnoringInteractionEvents()
                 
                 if error != nil {
-                    print("WTF FUCKING FUCK FUCK \(error!)")
+                    print(error!)
                     let alert = UIAlertController(title: "Could not post image", message: "Please try again later", preferredStyle: .Alert)
                     let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
                     alert.addAction(okAction)
@@ -79,7 +79,7 @@ class PostVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
                     self.savePostToDatabase(S3BucketName, key: S3UploadKeyName)
                 }
             })
-            } as AWSS3TransferUtilityUploadCompletionHandlerBlock
+        } as AWSS3TransferUtilityUploadCompletionHandlerBlock
         
         let transferUtility = AWSS3TransferUtility.defaultS3TransferUtility()
         
@@ -147,7 +147,7 @@ class PostVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
         super.viewDidLoad()
         
         activityIndicator = UIActivityIndicatorView(frame: self.view.frame)
-        activityIndicator.backgroundColor = UIColor(white: 1.0, alpha: 1.0)
+        activityIndicator.backgroundColor = UIColor(white: 1.0, alpha: 0.75)
         activityIndicator.center = self.view.center
         activityIndicator.hidesWhenStopped = true
         activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray

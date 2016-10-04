@@ -20,6 +20,8 @@
 		764D447C1DA30DA100E14968 /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764D447B1DA30DA100E14968 /* UserVC.swift */; };
 		764D447F1DA3119D00E14968 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764D447E1DA3119D00E14968 /* PostVC.swift */; };
 		76DBC6541DA3156B0038CC85 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DBC6531DA3156B0038CC85 /* Constants.swift */; };
+		76DBC6561DA34BFB0038CC85 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DBC6551DA34BFB0038CC85 /* FeedTableViewCell.swift */; };
+		76DBC65A1DA34E760038CC85 /* FeedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DBC6591DA34E760038CC85 /* FeedTVC.swift */; };
 		7A2E59CCE0D723C48F002A33 /* Pods_InstagramAWS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EF6B63E68E4484E2229405 /* Pods_InstagramAWS.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		764D447D1DA30EFE00E14968 /* InstagramAWS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InstagramAWS.entitlements; sourceTree = "<group>"; };
 		764D447E1DA3119D00E14968 /* PostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		76DBC6531DA3156B0038CC85 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		76DBC6551DA34BFB0038CC85 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		76DBC6591DA34E760038CC85 /* FeedTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTVC.swift; sourceTree = "<group>"; };
 		BEC22B4807B4B06F118B0010 /* Pods-InstagramAWS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramAWS.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstagramAWS/Pods-InstagramAWS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +134,8 @@
 				764D445D1DA3096800E14968 /* ViewController.swift */,
 				764D447B1DA30DA100E14968 /* UserVC.swift */,
 				764D447E1DA3119D00E14968 /* PostVC.swift */,
+				76DBC6551DA34BFB0038CC85 /* FeedTableViewCell.swift */,
+				76DBC6591DA34E760038CC85 /* FeedTVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -278,6 +284,7 @@
 			files = (
 				764D447C1DA30DA100E14968 /* UserVC.swift in Sources */,
 				764D445E1DA3096800E14968 /* ViewController.swift in Sources */,
+				76DBC65A1DA34E760038CC85 /* FeedTVC.swift in Sources */,
 				764D44781DA30D1D00E14968 /* DatabaseService.swift in Sources */,
 				764D445C1DA3096700E14968 /* AppDelegate.swift in Sources */,
 				764D447A1DA30D6200E14968 /* Post.swift in Sources */,
@@ -285,6 +292,7 @@
 				764D447F1DA3119D00E14968 /* PostVC.swift in Sources */,
 				764D44761DA30D0D00E14968 /* Follower.swift in Sources */,
 				76DBC6541DA3156B0038CC85 /* Constants.swift in Sources */,
+				76DBC6561DA34BFB0038CC85 /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
