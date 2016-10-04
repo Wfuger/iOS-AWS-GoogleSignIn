@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="1679" y="139"/>
         </scene>
-        <!--View Controller-->
+        <!--PostVC-->
         <scene sceneID="RCP-Jg-h4R">
             <objects>
-                <viewController id="m4R-A8-Ho5" sceneMemberID="viewController">
+                <viewController id="m4R-A8-Ho5" customClass="PostVC" customModule="InstagramAWS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mI0-4q-IKb"/>
                         <viewControllerLayoutGuide type="bottom" id="hv4-pz-me4"/>
@@ -89,6 +89,9 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nB6-hw-pHD">
                                 <state key="normal" title="Choose an Image"/>
+                                <connections>
+                                    <action selector="chooseImage:" destination="m4R-A8-Ho5" eventType="touchUpInside" id="23k-vg-Hwq"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cs0-ZC-ImS">
                                 <nil key="textColor"/>
@@ -103,6 +106,9 @@
                                 <state key="normal" title="Upload">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="postImage:" destination="m4R-A8-Ho5" eventType="touchUpInside" id="t0L-tB-HaO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -120,6 +126,10 @@
                             <constraint firstItem="nB6-hw-pHD" firstAttribute="top" secondItem="Mdf-kq-5Tn" secondAttribute="bottom" constant="8" symbolic="YES" id="p3r-cS-K3M"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imagePost" destination="Mdf-kq-5Tn" id="cYj-bK-rmu"/>
+                        <outlet property="setMessage" destination="cs0-ZC-ImS" id="rtX-tS-a3I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ByY-TW-1hZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
